@@ -1,0 +1,38 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Valentine's Shoot'em Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>💘💘💘Люблю тебя, Ксюша💘💘💘</h1>
+        <!-- Обновленная секция управления -->
+	<div class="controls-info">
+    		Управление: ←A   D→ - Движение | W - Огонь | Набери 3000 поинтов
+	</div>
+    </header>
+
+    <div class="game-container" id="game">
+    <img id="gameTitle" src="assets/game-title.png" alt="Game Title" style="display: block; width: 100%; height: auto;">
+    <canvas id="gameCanvas" style="display: none;"></canvas>
+    <div class="hud" style="display: none;">
+        <div>Очки: <span id="score">0</span></div>
+        <div>Жизни: <span id="lives">❤️❤️❤️</span></div>
+    </div>
+    <button id="startBtn">Начать игру!</button>
+</div>
+
+<!-- Окно победы -->
+<div id="winModal" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); text-align: center;">
+    <h2>ОБОЖАЮ ТЕБЯ, С ДНЕМ СВЯТОГО ВАЛЕНТИНА!</h2>
+    <button id="closeModalBtn">Закрыть</button>
+</div>
+
+
+    <script src="game.js"></script>
+</body>
+</html>
